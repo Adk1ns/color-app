@@ -1,0 +1,20 @@
+.App-header {
+	background-color: black;
+	min-height: 10vh;
+	color: #faf4ea;
+}
+.header-main {
+	color: brown;
+}
+
+.footer {
+	background-color: black;
+	color: #faf4ea;
+	height: 5rem;
+}
+.fit {
+	width: 100%;
+}
+main {
+	background-image: url('/home/j/Documents/code/Random Projects/color-swatch/src/Images/brownieBack.jpeg');
+}
