@@ -90,8 +90,8 @@ function App(props) {
 				<header className='App-header'>
 					<div className='row fit'>
 						<div className='col-7 m-3 mb-2'>
-							<h1 className='header-main Merienda'>PoopSwatch.com</h1>
-							<h3 className='Vibes'>Color solutions for your shitty website</h3>
+							<h1 className='header-main Merienda'>ColorSwatch.com</h1>
+							<h3 className='Tangerine'>Color solutions for your website</h3>
 						</div>
 						<div className='col-4 d-flex align-items-end justify-content-end m-3 mb-2'>
 							<nav className='p-3'>

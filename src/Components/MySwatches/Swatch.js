@@ -19,7 +19,7 @@ const Swatch = ({ setMySwatches, swatch, mySwatches }) => {
 					))}
 				</div>
 				<div className='d-flex justify-content-between mt-2'>
-					<h2 className='Dancing'>{swatch.name}</h2>
+					<h2 className=''>{swatch.name}</h2>
 					<button className=' Merienda BTN-Single' onClick={saveButton}>
 						Save
 					</button>
