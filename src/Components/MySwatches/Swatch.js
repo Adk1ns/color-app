@@ -12,14 +12,14 @@ const Swatch = ({ setMySwatches, swatch, mySwatches }) => {
 
 	return (
 		<SwatchPickerStyle>
-			<div className='swatch-container m-3'>
+			<div className='swatch-container m-3 box-shadow'>
 				<div className='d-flex justify-content-start'>
 					{swatch.colors.map((color, index) => (
 						<SwatchDiv bg={color} key={index} />
 					))}
 				</div>
 				<div className='d-flex justify-content-between mt-2'>
-					<h2 className=''>{swatch.name}</h2>
+					<h3 className='Merienda pt-2'>{swatch.name}</h3>
 					<button className=' Merienda BTN-Single' onClick={saveButton}>
 						Save
 					</button>

@@ -36,8 +36,8 @@ const ColorConverter = () => {
 
 	return (
 		<ConverterStyle>
-			<div className='Merienda border-converter'>
-				<h2 className='header-converter text-center'>Color Converter</h2>
+			<div className='Merienda border-converter box-shadow'>
+				<h2 className='header-converter text-center p-2'>Color Converter</h2>
 				<input
 					type='text'
 					placeholder='red'

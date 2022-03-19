@@ -28,6 +28,7 @@ const AppHeaderStyle = styled.div`
 	}
 	.Tangerine {
 		font-family: Tangerine;
+		font-size: 2.5em;
 	}
 	.text-white {
 		color: white;
@@ -49,6 +50,9 @@ const AppHeaderStyle = styled.div`
 				color: white;
 			}
 		}
+	}
+	.box-shadow {
+		box-shadow: 0 7px 10px 2px #0000001a;
 	}
 	.BTN-left-Round {
 		border-radius: 1rem 0 0 1rem;

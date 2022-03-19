@@ -6,7 +6,7 @@ import ColorConverter from './ColorConverter/ColorConverter'
 const MainPage = ({ mySwatches, setMySwatches }) => {
 	const [popSwatches, setPopSwatches] = useState([
 		{
-			name: 'Swatchy',
+			name: 'Swatch Example',
 			id: 10,
 			style: ['popular', 'winter', 'red'],
 			colors: [
@@ -75,7 +75,7 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 			],
 		},
 		{
-			name: 'Corn & Carrot',
+			name: 'Fall Fest',
 			id: 29,
 			style: ['brown', 'bold', 'summer', 'orange', 'yellow'],
 			colors: [
@@ -107,7 +107,7 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 			],
 		},
 		{
-			name: 'My Swatch Itches',
+			name: 'Cool Colors',
 			id: 30,
 			style: [
 				'bold',
@@ -283,7 +283,7 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 			],
 		},
 		{
-			name: 'Post Spinach',
+			name: 'Spinach & Greens',
 			id: 34,
 			style: ['green', 'summer'],
 			colors: [
@@ -325,7 +325,7 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 			],
 		},
 		{
-			name: 'Pink to Stink',
+			name: 'Pinky',
 			id: 35,
 			style: ['brown', 'pink', 'popular', 'autumn'],
 			colors: [
@@ -377,22 +377,52 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 				<div className=''>
 					<div className='Merienda col-1 d-flex flex-column filter-button'>
 						<h5 className='Akaya mt-4'>Colors:</h5>
-						<button onClick={() => sortColor('green')}>Green</button>
-						<button onClick={() => sortColor('yellow')}>Yellow</button>
-						<button onClick={() => sortColor('red')}>Red</button>
-						<button onClick={() => sortColor('blue')}>Blue</button>
-						<button onClick={() => sortColor('purple')}>Purple</button>
-						<button onClick={() => sortColor('orange')}>Orange</button>
-						<button onClick={() => sortColor('brown')}>Brown</button>
-						<button onClick={() => sortColor('pink')}>Pink</button>
+						<button onClick={() => sortColor('green')} className='box-shadow'>
+							Green
+						</button>
+						<button onClick={() => sortColor('yellow')} className='box-shadow'>
+							Yellow
+						</button>
+						<button onClick={() => sortColor('red')} className='box-shadow'>
+							Red
+						</button>
+						<button onClick={() => sortColor('blue')} className='box-shadow'>
+							Blue
+						</button>
+						<button onClick={() => sortColor('purple')} className='box-shadow'>
+							Purple
+						</button>
+						<button onClick={() => sortColor('orange')} className='box-shadow'>
+							Orange
+						</button>
+						<button onClick={() => sortColor('brown')} className='box-shadow'>
+							Brown
+						</button>
+						<button onClick={() => sortColor('pink')} className='box-shadow'>
+							Pink
+						</button>
 						<h5 className='Akaya mt-3'>Styles:</h5>
-						<button onClick={() => sortColor('popular')}>Popular</button>
-						<button onClick={() => sortColor('autumn')}>Autumn</button>
-						<button onClick={() => sortColor('summer')}>Summer</button>
-						<button onClick={() => sortColor('spring')}>Spring</button>
-						<button onClick={() => sortColor('winter')}>Winter</button>
-						<button onClick={() => sortColor('bold')}>Bold</button>
-						<button onClick={() => sortColor('light')}>Light</button>
+						<button onClick={() => sortColor('popular')} className='box-shadow'>
+							Popular
+						</button>
+						<button onClick={() => sortColor('autumn')} className='box-shadow'>
+							Autumn
+						</button>
+						<button onClick={() => sortColor('summer')} className='box-shadow'>
+							Summer
+						</button>
+						<button onClick={() => sortColor('spring')} className='box-shadow'>
+							Spring
+						</button>
+						<button onClick={() => sortColor('winter')} className='box-shadow'>
+							Winter
+						</button>
+						<button onClick={() => sortColor('bold')} className='box-shadow'>
+							Bold
+						</button>
+						<button onClick={() => sortColor('light')} className='box-shadow'>
+							Light
+						</button>
 					</div>
 				</div>
 				<div className='col-9'>

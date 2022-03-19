@@ -57,7 +57,7 @@ const SwatchPicker = (
 
 	return (
 		<SwatchPickerStyle>
-			<div className='container-create m-3 Merienda swatch-picker-border'>
+			<div className='container-create m-3 Merienda swatch-picker-border box-shadow'>
 				<div className='col m-2 '>
 					<div className='row'>
 						<div className='col-3'>
@@ -92,10 +92,14 @@ const SwatchPicker = (
 									<div className='d-flex justify-content-center my-3'>
 										<RgbaStringColorPicker color={color} onChange={setColor} />
 									</div>
-									<div>
+									<div className='text-center'>
 										<p>{color}</p>
 									</div>
-									<button onClick={addColor}>Add Color</button>
+									<div className='d-flex justify-content-center'>
+										<button onClick={addColor} className='BTN-Single'>
+											Add Color
+										</button>
+									</div>
 								</>
 							)}
 							{colorFormat === 'hsla' && (
@@ -103,10 +107,14 @@ const SwatchPicker = (
 									<div className='d-flex justify-content-center my-3'>
 										<HslaStringColorPicker color={color} onChange={setColor} />
 									</div>
-									<div>
+									<div className='text-center'>
 										<p>{color}</p>
 									</div>
-									<button onClick={addColor}>Add Color</button>
+									<div className='d-flex justify-content-center'>
+										<button onClick={addColor} className='BTN-Single'>
+											Add Color
+										</button>
+									</div>
 								</>
 							)}
 						</div>
@@ -141,7 +149,7 @@ const SwatchPicker = (
 							</div>
 						</div>
 						<div className='col-3'>
-							<h1> BUY STUFF</h1>
+							<h1> </h1>
 						</div>
 					</div>
 				</div>

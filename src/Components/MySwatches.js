@@ -33,7 +33,7 @@ const MySwatches = ({ mySwatches, setMySwatches }) => {
 										setColorsInSwatch={setColorsInSwatch}
 									/>
 								)}
-								<h1>THIS IS A LIST OF MYSWATCHES</h1>
+								<h1 className='text-center pt-3'>My Color Swatch Collection</h1>
 								<div className='d-flex flex-wrap'>
 									<div className='d-flex align-items-center justify-content-around flex-wrap'>
 										{mySwatches.map((swatch, index) => (
@@ -47,7 +47,9 @@ const MySwatches = ({ mySwatches, setMySwatches }) => {
 										))}
 									</div>
 								</div>
-								<h4>upgrade for more swatches</h4>
+								<h4 className='text-center mt-5'>
+									Upgrade your account to get more swatches
+								</h4>
 							</>
 						)}
 						{!isLoggedIn && (
@@ -55,8 +57,8 @@ const MySwatches = ({ mySwatches, setMySwatches }) => {
 								<h1>Please log the fuck in</h1>
 							</div>
 						)}
-						<button onClick={logInOut}>LogIn/Out</button>
-						<button onClick={togglePicker}>TogglePicker</button>
+						{/* <button onClick={logInOut}>LogIn/Out</button>
+						<button onClick={togglePicker}>TogglePicker</button> */}
 					</div>
 				)
 			}}

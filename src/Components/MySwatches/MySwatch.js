@@ -15,7 +15,7 @@ const MySwatch = (props) => {
 
 	return (
 		<SwatchPickerStyle>
-			<div className='swatch-container m-3 Merienda'>
+			<div className='swatch-container m-3 Merienda box-shadow'>
 				<div className='d-flex justify-content-start'>
 					{props.swatch.colors.map((color, index) => (
 						<SwatchDiv bg={color} key={index} />
