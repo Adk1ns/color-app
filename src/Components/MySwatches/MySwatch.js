@@ -9,9 +9,10 @@ const MySwatch = (props) => {
 		)
 	}
 	const editSwatch = () => {
-		props.setColorsInSwatch(props.swatch.colors)
+		props.setColorsInSwatch(props.swatch)
 		removeSwatch()
 	}
+	console.log(props)
 
 	return (
 		<SwatchPickerStyle>

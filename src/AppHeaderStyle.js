@@ -80,5 +80,17 @@ const AppHeaderStyle = styled.div`
 		color: white;
 		text-decoration: none;
 	}
+
+	${'' /* other */}
+
+	.colorDrip-size {
+		height: 20%;
+		width: 100%;
+		border-radius: 1rem;
+	}
+	.border-bottom {
+		padding-bottom: 1rem;
+		border-bottom: 1px solid lightgray;
+	}
 `
 export default AppHeaderStyle

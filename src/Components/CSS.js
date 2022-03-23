@@ -7,7 +7,7 @@ const CSS = () => {
 				I'm thinking here I will have some CSS resources and/or tutorials??
 			</h3>
 			<h4>Merch?</h4>
-			<p>I don't fucking know yet so here is some lorem</p>
+			<p>I don't know yet so here is some lorem</p>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

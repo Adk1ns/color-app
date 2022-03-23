@@ -6,6 +6,11 @@ const SwatchPickerStyle = styled.div`
 	}
 	.container-create {
 	}
+	.colorDrip-size {
+		height: 95%;
+		width: 100%;
+		border-radius: 1rem;
+	}
 	.copied {
 		font-weight: bold;
 		animation-duration: 1s;
@@ -34,6 +39,10 @@ const SwatchPickerStyle = styled.div`
 		width: 2.2em;
 		height: 2.2em;
 	}
+	.input-name {
+		border-radius: 0.5rem;
+		border: 1px solid lightgray;
+	}
 	.swatch-div {
 		border: 1px solid black;
 		width: 100%;
@@ -47,8 +56,8 @@ const SwatchPickerStyle = styled.div`
 	}
 
 	.swatch-div-container {
-		border: 1px solid black;
-		min-height: 16rem;
+		border: 1px solid lightgray;
+		min-height: 13rem;
 		border-radius: 1rem;
 		padding: 0.75rem;
 		background-color: white;

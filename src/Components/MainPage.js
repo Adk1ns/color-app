@@ -38,43 +38,6 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 			],
 		},
 		{
-			name: 'Trouser Brownies',
-			id: 20,
-			style: ['brown', 'autumn'],
-			colors: [
-				{
-					id: 1,
-					color: '#b57953',
-					swatch: 'two',
-				},
-				{
-					id: 2,
-					color: '#9d6441',
-					swatch: 'two',
-				},
-				{
-					id: 3,
-					color: '#875233',
-					swatch: 'two',
-				},
-				{
-					id: 4,
-					color: '#673820',
-					swatch: 'two',
-				},
-				{
-					id: 5,
-					color: '#552914',
-					swatch: 'two',
-				},
-				{
-					id: 6,
-					color: '#432818',
-					swatch: 'two',
-				},
-			],
-		},
-		{
 			name: 'Fall Fest',
 			id: 29,
 			style: ['brown', 'bold', 'summer', 'orange', 'yellow'],
@@ -147,6 +110,43 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 			],
 		},
 		{
+			name: 'Go Ducks!',
+			id: 67341,
+			style: ['green', 'summer', 'yellow'],
+			colors: [
+				{
+					id: 2,
+					color: '#60992b',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#fbde41',
+					swatch: 'two',
+				},
+				{
+					id: 4,
+					color: '#19c782',
+					swatch: 'two',
+				},
+				{
+					id: 5,
+					color: '#fffb45',
+					swatch: 'two',
+				},
+				{
+					id: 6,
+					color: '#2ec4b6',
+					swatch: 'two',
+				},
+				{
+					id: 7,
+					color: '#f9dd00',
+					swatch: 'two',
+				},
+			],
+		},
+		{
 			name: 'Mississippi Mud Snack',
 			id: 31,
 			style: ['brown', 'popular'],
@@ -196,7 +196,7 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 		{
 			name: 'Squatch Swatch',
 			id: 32,
-			style: ['bold'],
+			style: ['bold', 'green', 'blue', 'gray', 'yellow'],
 			colors: [
 				{
 					id: 1,
@@ -325,6 +325,75 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 			],
 		},
 		{
+			name: 'Garden Sample',
+			id: 6734,
+			style: ['green', 'summer'],
+			colors: [
+				{
+					id: 2,
+					color: '#164022',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#3d6233',
+					swatch: 'two',
+				},
+				{
+					id: 4,
+					color: '#60992b',
+					swatch: 'two',
+				},
+				{
+					id: 5,
+					color: '#2b9981',
+					swatch: 'two',
+				},
+				{
+					id: 6,
+					color: '#61b34b',
+					swatch: 'two',
+				},
+			],
+		},
+		{
+			name: 'Trouser Brownies',
+			id: 20,
+			style: ['brown', 'autumn'],
+			colors: [
+				{
+					id: 1,
+					color: '#b57953',
+					swatch: 'two',
+				},
+				{
+					id: 2,
+					color: '#9d6441',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#875233',
+					swatch: 'two',
+				},
+				{
+					id: 4,
+					color: '#673820',
+					swatch: 'two',
+				},
+				{
+					id: 5,
+					color: '#552914',
+					swatch: 'two',
+				},
+				{
+					id: 6,
+					color: '#432818',
+					swatch: 'two',
+				},
+			],
+		},
+		{
 			name: 'Pinky',
 			id: 35,
 			style: ['brown', 'pink', 'popular', 'autumn'],
@@ -356,6 +425,210 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 				},
 			],
 		},
+		{
+			name: 'Web Theme',
+			id: 1325,
+			style: ['blue', 'purple', 'black'],
+			colors: [
+				{
+					id: 1,
+					color: '#18879d',
+					swatch: 'two',
+				},
+				{
+					id: 2,
+					color: '#184f9d',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#49189d',
+					swatch: 'two',
+				},
+				{
+					id: 4,
+					color: '#000000',
+					swatch: 'two',
+				},
+			],
+		},
+		{
+			name: 'Green Team',
+			id: 1326,
+			style: ['green', 'teal', 'summer'],
+			colors: [
+				{
+					id: 1,
+					color: '#abc9aa',
+					swatch: 'two',
+				},
+				{
+					id: 2,
+					color: '#75db71',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#527b28',
+					swatch: 'two',
+				},
+				{
+					id: 4,
+					color: '#287b70',
+					swatch: 'two',
+				},
+				{
+					id: 5,
+					color: '#123811',
+					swatch: 'two',
+				},
+			],
+		},
+		{
+			name: 'Barney',
+			id: 1327,
+			style: ['green', 'purple', 'black'],
+			colors: [
+				{
+					id: 1,
+					color: '#49189d',
+					swatch: 'two',
+				},
+				{
+					id: 2,
+					color: '#527b28',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#000000',
+					swatch: 'two',
+				},
+			],
+		},
+		{
+			name: 'Merienda Verde',
+			id: 2326,
+			style: ['green', 'purple', 'black'],
+			colors: [
+				{
+					id: 1,
+					color: '#49189d',
+					swatch: 'two',
+				},
+				{
+					id: 2,
+					color: '#527b28',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#2d6a4f',
+					swatch: 'two',
+				},
+				{
+					id: 4,
+					color: '#2d6a4f',
+					swatch: 'two',
+				},
+			],
+		},
+		{
+			name: 'swatch force one',
+			id: 10,
+			style: ['yellow', 'green', 'blue', 'gray'],
+			colors: [
+				{
+					id: 1,
+					color: '#19b582',
+					swatch: 'one',
+				},
+				{
+					id: 2,
+					color: '#1783bd',
+					swatch: 'one',
+				},
+				{
+					id: 3,
+					color: '#fbde06',
+					swatch: 'one',
+				},
+				{
+					id: 4,
+					color: '#8b9898',
+					swatch: 'one',
+				},
+				{
+					id: 5,
+					color: '#355670',
+					swatch: 'one',
+				},
+			],
+		},
+		{
+			name: 'swatch force two',
+			id: 299,
+			style: ['black', 'green', 'red', 'orange'],
+			colors: [
+				{
+					id: 1,
+					color: '#ef476f',
+					swatch: 'two',
+				},
+				{
+					id: 2,
+					color: '#ffd166',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#06d6a0',
+					swatch: 'two',
+				},
+				{
+					id: 4,
+					color: '#118ab2',
+					swatch: 'two',
+				},
+				{
+					id: 5,
+					color: '#073b4c',
+					swatch: 'two',
+				},
+			],
+		},
+		{
+			name: 'Swatch Awesome',
+			id: 292,
+			style: ['black', 'green', 'red', 'orange'],
+			colors: [
+				{
+					id: 1,
+					color: '#011627',
+					swatch: 'two',
+				},
+				{
+					id: 2,
+					color: '#fdfffc',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#2ec4b6',
+					swatch: 'two',
+				},
+				{
+					id: 4,
+					color: '#e71d36',
+					swatch: 'two',
+				},
+				{
+					id: 5,
+					color: '#ff9f1c',
+					swatch: 'two',
+				},
+			],
+		},
 	])
 
 	const sortColor = (filter) => {
@@ -370,6 +643,8 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 			setPopSwatches(sortedColors)
 		}
 	}
+
+	//TODO: re-factor buttons
 
 	return (
 		<div className='mx-3'>
@@ -441,6 +716,7 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 				</div>
 				<div className='col-2 mt-5'>
 					<ColorConverter />
+					{/* <img className='colorDrip-size mt-4' src={colorDrip}></img> */}
 				</div>
 			</div>
 		</div>

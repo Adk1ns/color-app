@@ -22,7 +22,7 @@ const MySwatches = ({ mySwatches, setMySwatches }) => {
 		<UserContext.Consumer>
 			{(ctx) => {
 				return (
-					<div className='Merienda'>
+					<div className='Merienda mt-2'>
 						{isLoggedIn && (
 							<>
 								{swatchPickerOpen && (
@@ -33,9 +33,9 @@ const MySwatches = ({ mySwatches, setMySwatches }) => {
 										setColorsInSwatch={setColorsInSwatch}
 									/>
 								)}
-								<h1 className='text-center pt-3'>My Color Swatch Collection</h1>
-								<div className='d-flex flex-wrap'>
-									<div className='d-flex align-items-center justify-content-around flex-wrap'>
+								<h1 className='text-center pt-5'>My Color Swatch Collection</h1>
+								<div className='d-flex flex-wrap justify-content-center'>
+									<div className='d-flex align-items-center flex-wrap'>
 										{mySwatches.map((swatch, index) => (
 											<MySwatch
 												swatch={swatch}

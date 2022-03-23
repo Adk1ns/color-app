@@ -1,6 +1,6 @@
 import React from 'react'
 import ConverterStyle from './ConverterStyle'
-import chroma, { rgb } from 'chroma-js'
+import chroma from 'chroma-js'
 import { useState, useEffect } from 'react'
 
 const ColorConverter = () => {
@@ -33,6 +33,9 @@ const ColorConverter = () => {
 	const checker = () => {
 		setIsValid(chroma.valid(enteredValue))
 	}
+	if (nameConverted.split(' ').map((word) => word[0]) == '#') {
+		setNameConverted('N/A')
+	}
 
 	return (
 		<ConverterStyle>
@@ -58,11 +61,11 @@ const ColorConverter = () => {
 					<p>
 						RGB: ({rgbConverted[0]}, {rgbConverted[1]}, {rgbConverted[2]})
 					</p>
-					{/* <p>name: {nameConverted}</p> */}
+					<p>Name: {nameConverted}</p>
 
 					<p>
-						HSL: {hslConverted[0]}, {hslConverted[1]}, {hslConverted[2]},{' '}
-						{hslConverted[3]}
+						HSL: {hslConverted[0]}, {hslConverted[1]}%, {hslConverted[2]}
+						%, {hslConverted[3]}
 					</p>
 				</div>
 			</div>

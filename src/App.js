@@ -53,27 +53,58 @@ function App(props) {
 			colors: [
 				{
 					id: 1,
-					color: '#19c782',
+					color: '#ef476f',
 					swatch: 'two',
 				},
 				{
 					id: 2,
-					color: '#4783bd',
+					color: '#ffd166',
 					swatch: 'two',
 				},
 				{
 					id: 3,
-					color: '#fbde41',
+					color: '#06d6a0',
 					swatch: 'two',
 				},
 				{
 					id: 4,
-					color: '#8b9898',
+					color: '#118ab2',
 					swatch: 'two',
 				},
 				{
 					id: 5,
-					color: '#855670',
+					color: '#073b4c',
+					swatch: 'two',
+				},
+			],
+		},
+		{
+			name: 'Swatch Awesome',
+			id: 292,
+			colors: [
+				{
+					id: 1,
+					color: '#011627',
+					swatch: 'two',
+				},
+				{
+					id: 2,
+					color: '#fdfffc',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#2ec4b6',
+					swatch: 'two',
+				},
+				{
+					id: 4,
+					color: '#e71d36',
+					swatch: 'two',
+				},
+				{
+					id: 5,
+					color: '#ff9f1c',
 					swatch: 'two',
 				},
 			],
@@ -135,7 +166,8 @@ function App(props) {
 					</Routes>
 				</main>
 				<footer className='footer text-center'>
-					<p className='Merienda pt-3'>color app footer</p>
+					<p className='Merienda pt-3 mb-0'>ColorSwatch.com</p>
+					<p>2022</p>
 				</footer>
 			</AppHeaderStyle>
 		</UserContext.Provider>
