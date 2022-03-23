@@ -10,6 +10,7 @@ const MySwatches = ({ mySwatches, setMySwatches }) => {
 	const [isLoggedIn, setIsLoggedIn] = useState(true)
 	const [swatchPickerOpen, setSwatchPickerOpen] = useState(true)
 	const [colorsInSwatch, setColorsInSwatch] = useState([])
+	const [name, setSwatchName] = useState('Please Add A Name')
 
 	const logInOut = () => {
 		setIsLoggedIn(!isLoggedIn)
@@ -31,10 +32,14 @@ const MySwatches = ({ mySwatches, setMySwatches }) => {
 										mySwatches={mySwatches}
 										colorsInSwatch={colorsInSwatch}
 										setColorsInSwatch={setColorsInSwatch}
+										name={name}
+										setSwatchName={setSwatchName}
 									/>
 								)}
-								<h1 className='text-center pt-5'>My Color Swatch Collection</h1>
-								<div className='d-flex flex-wrap justify-content-center'>
+								<h1 className='text-center pt-5 border-bottom'>
+									My Color Swatch Collection
+								</h1>
+								<div className='d-flex flex-wrap justify-content-center border-bottom'>
 									<div className='d-flex align-items-center flex-wrap'>
 										{mySwatches.map((swatch, index) => (
 											<MySwatch
@@ -43,6 +48,8 @@ const MySwatches = ({ mySwatches, setMySwatches }) => {
 												mySwatches={mySwatches}
 												setMySwatches={setMySwatches}
 												setColorsInSwatch={setColorsInSwatch}
+												name={name}
+												setSwatchName={setSwatchName}
 											/>
 										))}
 									</div>

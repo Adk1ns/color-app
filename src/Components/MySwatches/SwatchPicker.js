@@ -12,11 +12,12 @@ const SwatchPicker = (
 	mySwatches,
 	setMySwatches,
 	colorsInSwatch,
-	setColorsInSwatch
+	setColorsInSwatch,
+	name,
+	setSwatchName
 ) => {
 	const [color, setColor] = useState('#985f2a')
 	const [colorFormat, setColorFormat] = useState('hex')
-	const [name, setSwatchName] = useState('Please Add A Name')
 	const [colorRemover, setColorRemover] = useState(false)
 	const [addButton, setAddButton] = useState(false)
 
@@ -39,14 +40,18 @@ const SwatchPicker = (
 			setAddButton(true)
 		}
 	}
-	console.log(props.colorsInSwatch.length)
 
 	const saveButton = () => {
 		//new error in save button, crash on save
-		const id = Math.floor(Math.random() * 100000) + 1
+		const id = Math.floor(Math.random() * 1000000) + 1
 		const colors = props.colorsInSwatch
-		const newSwatch = { id: id, colors, name }
+		const newSwatch = { id: id, colors, name: props.name }
 		props.setMySwatches([...props.mySwatches, newSwatch])
+	}
+	const clearButton = () => {
+		props.setColorsInSwatch([])
+		props.setSwatchName('')
+		setAddButton(false)
 	}
 
 	const removeClickHandler = () => {
@@ -57,8 +62,24 @@ const SwatchPicker = (
 			props.colorsInSwatch.filter((color) => color.id !== id)
 		)
 		if (props.colorsInSwatch.length < 11) {
-			console.log('no')
 			setAddButton(false)
+		}
+	}
+
+	const customInput = (e) => {
+		if (chroma.valid(e.target.value)) {
+			setAddButton(false)
+			setColor(e.target.value)
+		} else {
+			setAddButton(true)
+		}
+	}
+
+	const toggleAddBTN = (e) => {
+		if (chroma.valid(e.target.value)) {
+			setAddButton(false)
+		} else {
+			setAddButton(true)
 		}
 	}
 
@@ -84,8 +105,15 @@ const SwatchPicker = (
 									<div className='d-flex justify-content-center my-3'>
 										<HexColorPicker color={color} onChange={setColor} />
 									</div>
-									<div className='text-center'>
-										<p>{color}</p>
+									<div className='text-center mb-2'>
+										{/* <p>{color}</p> */}
+										<input
+											key={color}
+											defaultValue={color || ''}
+											onBlur={customInput}
+											className='text-center color-input'
+											onChange={toggleAddBTN}
+										/>
 									</div>
 									<div className='d-flex justify-content-center'>
 										<button
@@ -103,7 +131,14 @@ const SwatchPicker = (
 										<RgbaStringColorPicker color={color} onChange={setColor} />
 									</div>
 									<div className='text-center'>
-										<p>{color}</p>
+										{/* <p>{color}</p> */}
+										<input
+											key={color}
+											defaultValue={color || ''}
+											onBlur={customInput}
+											className='text-center color-input'
+											onChange={toggleAddBTN}
+										/>
 									</div>
 									<div className='d-flex justify-content-center'>
 										<button
@@ -121,7 +156,14 @@ const SwatchPicker = (
 										<HslaStringColorPicker color={color} onChange={setColor} />
 									</div>
 									<div className='text-center'>
-										<p>{color}</p>
+										{/* <p>{color}</p> */}
+										<input
+											key={color}
+											defaultValue={color || ''}
+											onBlur={customInput}
+											className='text-center color-input'
+											onChange={toggleAddBTN}
+										/>
 									</div>
 									<div className='d-flex justify-content-center'>
 										<button
@@ -148,15 +190,16 @@ const SwatchPicker = (
 								</div>
 							)}
 							<div className='d-flex justify-content-center pt-3 border-bottom'>
-								<p className='my-auto mx-2'>{name}</p>
+								<p className='my-auto mx-2'>Name: </p>
 								<input
+									value={props.name}
 									className='input-name mx-2'
 									type='text'
-									onChange={(e) => setSwatchName(e.target.value)}
+									onChange={(e) => props.setSwatchName(e.target.value)}
 								/>
 
 								<button className='BTN-Single mx-2' onClick={saveButton}>
-									save Swatch
+									Save Swatch
 								</button>
 								<div>
 									<button
@@ -165,6 +208,9 @@ const SwatchPicker = (
 										{colorRemover ? 'Done' : 'Remove Colors'}
 									</button>
 								</div>
+								<button className='BTN-Single mx-2' onClick={clearButton}>
+									Clear
+								</button>
 							</div>
 							<div className='d-flex justify-content-around pt-3'>
 								<p className='my-auto'>Tag Colors:</p>
@@ -174,8 +220,9 @@ const SwatchPicker = (
 								<button className='BTN-Single mx-2'>Green</button>
 								<button className='BTN-Single mx-2'>Blue</button>
 								<button className='BTN-Single mx-2'>Purple</button>
-								<button className='BTN-Single mx-2'>Gray</button>
+								<button className='BTN-Single mx-2'>Brown</button>
 								<button className='BTN-Single mx-2'>Black</button>
+								<button className='BTN-Single mx-2'>Gray</button>
 							</div>
 						</div>
 					</div>

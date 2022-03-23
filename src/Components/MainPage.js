@@ -650,7 +650,7 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 		<div className='mx-3'>
 			<div className='d-flex flex-row'>
 				<div className=''>
-					<div className='Merienda col-1 d-flex flex-column filter-button'>
+					<div className='Merienda col-1 d-flex flex-column filter-button text-center'>
 						<h5 className='Akaya mt-4'>Colors:</h5>
 						<button onClick={() => sortColor('green')} className='box-shadow'>
 							Green

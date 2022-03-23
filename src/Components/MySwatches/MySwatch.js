@@ -9,10 +9,10 @@ const MySwatch = (props) => {
 		)
 	}
 	const editSwatch = () => {
-		props.setColorsInSwatch(props.swatch)
+		props.setColorsInSwatch(props.swatch.colors)
+		props.setSwatchName(props.swatch.name)
 		removeSwatch()
 	}
-	console.log(props)
 
 	return (
 		<SwatchPickerStyle>
@@ -23,7 +23,7 @@ const MySwatch = (props) => {
 					))}
 				</div>
 				<div className='d-flex justify-content-between mt-3'>
-					<h2 className='Dancing'>{props.swatch.name}</h2>
+					<h4 className='Merienda my-auto'>{props.swatch.name}</h4>
 					<div className='d-flex justify-content-center'>
 						<button className=' BTN-left-Round' onClick={editSwatch}>
 							Edit

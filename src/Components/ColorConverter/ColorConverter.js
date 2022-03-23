@@ -47,11 +47,13 @@ const ColorConverter = () => {
 					className='input-converter my-2 text-center'
 					onChange={converterValue}
 				/>
-				<div className='d-flex justify-content-around border-bottom'>
-					{isValid && <p>valid</p>}
-					{!isValid && <p>no!</p>}
+				<div className='d-flex justify-content-around border-bottom pb-1'>
+					<div className='mt-3'>
+						{isValid && <p>Valid</p>}
+						{!isValid && <p>Not Valid</p>}
+					</div>
 					<div>
-						<button className='BTN-Single mb-2' onClick={convertClickHandler}>
+						<button className='BTN-Single mt-1' onClick={convertClickHandler}>
 							convert
 						</button>
 					</div>

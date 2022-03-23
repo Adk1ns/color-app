@@ -6,10 +6,13 @@ const SwatchPickerStyle = styled.div`
 	}
 	.container-create {
 	}
-	.colorDrip-size {
-		height: 95%;
-		width: 100%;
-		border-radius: 1rem;
+	.color-input {
+		border: none;
+		font-size: 1.2em;
+		width: 80%;
+		&:focus {
+			border: 1px solid lightgray;
+		}
 	}
 	.copied {
 		font-weight: bold;
@@ -23,16 +26,6 @@ const SwatchPickerStyle = styled.div`
 				opacity: 0;
 			}
 		}
-	}
-	${
-		'' /* .rotate p {
-		display: none;
-		transform: rotate(90deg);
-		&:hover {
-
-			transform: rotate(0deg);
-		}
-	} */
 	}
 
 	.image-x-resize {
