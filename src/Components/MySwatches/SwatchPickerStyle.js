@@ -6,6 +6,14 @@ const SwatchPickerStyle = styled.div`
 	}
 	.container-create {
 	}
+	.color-input {
+		border: none;
+		font-size: 1.2em;
+		width: 80%;
+		&:focus {
+			border: 1px solid lightgray;
+		}
+	}
 	.copied {
 		font-weight: bold;
 		animation-duration: 1s;
@@ -19,20 +27,14 @@ const SwatchPickerStyle = styled.div`
 			}
 		}
 	}
-	${
-		'' /* .rotate p {
-		display: none;
-		transform: rotate(90deg);
-		&:hover {
-
-			transform: rotate(0deg);
-		}
-	} */
-	}
 
 	.image-x-resize {
 		width: 2.2em;
 		height: 2.2em;
+	}
+	.input-name {
+		border-radius: 0.5rem;
+		border: 1px solid lightgray;
 	}
 	.swatch-div {
 		border: 1px solid black;
@@ -47,8 +49,8 @@ const SwatchPickerStyle = styled.div`
 	}
 
 	.swatch-div-container {
-		border: 1px solid black;
-		min-height: 16rem;
+		border: 1px solid lightgray;
+		min-height: 13rem;
 		border-radius: 1rem;
 		padding: 0.75rem;
 		background-color: white;

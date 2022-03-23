@@ -53,27 +53,58 @@ function App(props) {
 			colors: [
 				{
 					id: 1,
-					color: '#19c782',
+					color: '#ef476f',
 					swatch: 'two',
 				},
 				{
 					id: 2,
-					color: '#4783bd',
+					color: '#ffd166',
 					swatch: 'two',
 				},
 				{
 					id: 3,
-					color: '#fbde41',
+					color: '#06d6a0',
 					swatch: 'two',
 				},
 				{
 					id: 4,
-					color: '#8b9898',
+					color: '#118ab2',
 					swatch: 'two',
 				},
 				{
 					id: 5,
-					color: '#855670',
+					color: '#073b4c',
+					swatch: 'two',
+				},
+			],
+		},
+		{
+			name: 'Swatch Awesome',
+			id: 292,
+			colors: [
+				{
+					id: 1,
+					color: '#011627',
+					swatch: 'two',
+				},
+				{
+					id: 2,
+					color: '#fdfffc',
+					swatch: 'two',
+				},
+				{
+					id: 3,
+					color: '#2ec4b6',
+					swatch: 'two',
+				},
+				{
+					id: 4,
+					color: '#e71d36',
+					swatch: 'two',
+				},
+				{
+					id: 5,
+					color: '#ff9f1c',
 					swatch: 'two',
 				},
 			],
@@ -84,14 +115,13 @@ function App(props) {
 		<UserContext.Provider
 			value={{
 				fuck: true,
-			}}
-		>
+			}}>
 			<AppHeaderStyle>
 				<header className='App-header'>
 					<div className='row fit'>
 						<div className='col-7 m-3 mb-2'>
-							<h1 className='header-main Merienda'>PoopSwatch.com</h1>
-							<h3 className='Vibes'>Color solutions for your shitty website</h3>
+							<h1 className='header-main Merienda'>ColorSwatch.com</h1>
+							<h2 className='Tangerine'>Color solutions for your website</h2>
 						</div>
 						<div className='col-4 d-flex align-items-end justify-content-end m-3 mb-2'>
 							<nav className='p-3'>
@@ -136,7 +166,8 @@ function App(props) {
 					</Routes>
 				</main>
 				<footer className='footer text-center'>
-					<p className='Merienda'>some stupid ass footer</p>
+					<p className='Merienda pt-3 mb-0'>ColorSwatch.com</p>
+					<p>2022</p>
 				</footer>
 			</AppHeaderStyle>
 		</UserContext.Provider>

@@ -16,5 +16,6 @@
 	width: 100%;
 }
 main {
-	background-image: url('/home/j/Documents/code/Random Projects/color-swatch/src/Images/brownieBack.jpeg');
+	background-color: white;
+	/* background-image: url('/home/j/Documents/code/Random Projects/color-app/src/Images/colorDrip.jpg'); */
 }
