@@ -1,6 +1,70 @@
 {
 	"SwatchesData": [
 		{
+			"name": "Bright Colors",
+			"id": 7,
+			"style": ["popular", "yellow", "orange", "bright", "bold", "green"],
+			"colors": [
+				{
+					"id": 1,
+					"color": "#264653",
+					"swatch": "one"
+				},
+				{
+					"id": 2,
+					"color": "#2a9d8f",
+					"swatch": "one"
+				},
+				{
+					"id": 3,
+					"color": "#e9c46a",
+					"swatch": "one"
+				},
+				{
+					"id": 4,
+					"color": "#f4a261",
+					"swatch": "one"
+				},
+				{
+					"id": 5,
+					"color": "#e76f51",
+					"swatch": "one"
+				}
+			]
+		},
+		{
+			"name": "light Colors",
+			"id": 8000,
+			"style": ["light", "purple", "pink", "blue"],
+			"colors": [
+				{
+					"id": 1,
+					"color": "#cdb4db",
+					"swatch": "one"
+				},
+				{
+					"id": 2,
+					"color": "#ffc8dd",
+					"swatch": "one"
+				},
+				{
+					"id": 3,
+					"color": "#ffafcc",
+					"swatch": "one"
+				},
+				{
+					"id": 4,
+					"color": "#bde0fe",
+					"swatch": "one"
+				},
+				{
+					"id": 5,
+					"color": "#a2d2ff",
+					"swatch": "one"
+				}
+			]
+		},
+		{
 			"name": "Swatch Example",
 			"id": 10,
 			"style": ["popular", "winter", "red"],
@@ -100,6 +164,33 @@
 				{
 					"id": 5,
 					"color": "#3a86ff",
+					"swatch": "two"
+				}
+			]
+		},
+		{
+			"name": "Web Theme",
+			"id": 1325,
+			"style": ["blue", "purple", "black"],
+			"colors": [
+				{
+					"id": 1,
+					"color": "#18879d",
+					"swatch": "two"
+				},
+				{
+					"id": 2,
+					"color": "#184f9d",
+					"swatch": "two"
+				},
+				{
+					"id": 3,
+					"color": "#49189d",
+					"swatch": "two"
+				},
+				{
+					"id": 4,
+					"color": "#000000",
 					"swatch": "two"
 				}
 			]
@@ -416,33 +507,6 @@
 				{
 					"id": 5,
 					"color": "#3f2613",
-					"swatch": "two"
-				}
-			]
-		},
-		{
-			"name": "Web Theme",
-			"id": 1325,
-			"style": ["blue", "purple", "black"],
-			"colors": [
-				{
-					"id": 1,
-					"color": "#18879d",
-					"swatch": "two"
-				},
-				{
-					"id": 2,
-					"color": "#184f9d",
-					"swatch": "two"
-				},
-				{
-					"id": 3,
-					"color": "#49189d",
-					"swatch": "two"
-				},
-				{
-					"id": 4,
-					"color": "#000000",
 					"swatch": "two"
 				}
 			]

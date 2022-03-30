@@ -3,6 +3,7 @@ import Swatch from './MySwatches/Swatch'
 import { useState } from 'react'
 import ColorConverter from './ColorConverter/ColorConverter'
 import SwatchesData from '../Data/SwatchesData.json'
+import ColorScale from './ColorScale/ColorScale'
 
 const MainPage = ({ mySwatches, setMySwatches }) => {
 	const [popSwatches, setPopSwatches] = useState(SwatchesData.SwatchesData)
@@ -24,7 +25,7 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 
 	return (
 		<div className='mx-3'>
-			<div className='filter-button row'>
+			<div className='filter-button row d-flex justify-content-center'>
 				<div></div>
 				<button onClick={() => sortColor('green')} className='box-shadow'>
 					Green
@@ -86,6 +87,9 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 				<button onClick={() => sortColor('light')} className='box-shadow'>
 					Light
 				</button>
+				<button onClick={() => sortColor('dark')} className='box-shadow'>
+					Dark
+				</button>
 			</div>
 			<div className='d-flex flex-row'>
 				<div className='col-10 mt-4'>
@@ -104,6 +108,9 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 				</div>
 				<div className='col-2 mt-5'>
 					<ColorConverter />
+					<div className='mt-4'>
+						<ColorScale />
+					</div>
 					{/* <img className='colorDrip-size mt-4' src={colorDrip}></img> */}
 				</div>
 			</div>

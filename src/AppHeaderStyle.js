@@ -145,5 +145,21 @@ const AppHeaderStyle = styled.div`
 		padding-bottom: 0.25rem;
 		border-bottom: 1px solid lightgray;
 	}
+	.square-1 {
+		background-color: white;
+		width: 1.2rem;
+		height: 1.2rem;
+		position: absolute;
+		top: 1.5rem;
+		left: 22.4rem;
+	}
+	.square-2 {
+		background-color: white;
+		width: 1.2rem;
+		height: 1.2rem;
+		position: absolute;
+		top: 2.6rem;
+		left: 21.2rem;
+	}
 `
 export default AppHeaderStyle
