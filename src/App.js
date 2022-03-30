@@ -18,7 +18,7 @@ function App(props) {
 	const [mySwatches, setMySwatches] = useState([
 		{
 			name: 'swatch force one',
-			id: 10,
+			id: 106670,
 			colors: [
 				{
 					id: 1,

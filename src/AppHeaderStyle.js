@@ -24,7 +24,7 @@ const AppHeaderStyle = styled.div`
 		font-family: Great Vibes;
 	}
 	.Merienda {
-		font-family: Merienda;
+		font-family: Ubuntu;
 	}
 	.Tangerine {
 		font-family: Tangerine;
@@ -36,18 +36,27 @@ const AppHeaderStyle = styled.div`
 	.text-black {
 		color: black;
 	}
+	.text-gray {
+		color: #8b9898;
+	}
 	${'' /* buttons */}
 	.filter-button {
 		button {
 			background-color: white;
 			width: 5rem;
 			border: 1px solid lightgray;
-			border-radius: 0.5rem;
-			margin-top: 0.25rem;
+			border-radius: 0 0 0.25rem 0.25rem;
+			${'' /* margin-top: 0.25rem; */}
 			padding: 0.25rem;
+			color: gray;
 			&:hover {
-				background-color: lightgray;
-				color: white;
+				color: black;
+			}
+			&:active {
+				transform: translateY(2px);
+				color: black;
+				border: 1px solid gray;
+				border-top: none;
 			}
 		}
 	}
@@ -55,36 +64,67 @@ const AppHeaderStyle = styled.div`
 		box-shadow: 0 7px 10px 2px #0000001a;
 	}
 	.BTN-left-Round {
-		border-radius: 1rem 0 0 1rem;
+		border-radius: 0.25rem 0 0 0.25rem;
 		background-color: white;
 		padding: 0.5rem;
+		border: 1px solid lightgray;
+		color: gray;
+		&:hover {
+			color: black;
+		}
 		&:active {
 			transform: translateY(2px);
+			color: black;
+			border: 1px solid black;
 		}
 	}
 	.BTN-right-Round {
-		border-radius: 0 1rem 1rem 0;
+		border-radius: 0 0.25rem 0.25rem 0;
 		background-color: white;
 		padding: 0.5rem;
 		border-left: none;
+		border: 1px solid lightgray;
+		color: gray;
+		&:hover {
+			color: black;
+		}
 		&:active {
 			transform: translateY(2px);
+			color: black;
+			border: 1px solid black;
 		}
 	}
 	.BTN-Middle {
 		background-color: white;
 		padding: 0.5rem;
 		border-left: none;
+		border: 1px solid lightgray;
+		color: gray;
+		&:hover {
+			color: black;
+		}
 		&:active {
 			transform: translateY(2px);
+			color: black;
+			border: 1px solid black;
 		}
 	}
 	.BTN-Single {
-		border-radius: 1rem;
+		border-radius: 0.25rem;
 		background-color: white;
 		padding: 0.5rem;
+		border: 1px solid lightgray;
+		color: gray;
+		&:hover {
+			color: black;
+		}
 		&:active {
 			transform: translateY(2px);
+			color: black;
+			border: 1px solid black;
+		}
+		&:disabled {
+			text-decoration: line-through;
 		}
 	}
 
@@ -99,10 +139,10 @@ const AppHeaderStyle = styled.div`
 	.colorDrip-size {
 		height: 20%;
 		width: 100%;
-		border-radius: 1rem;
+		border-radius: 0.25rem;
 	}
 	.border-bottom {
-		padding-bottom: 1rem;
+		padding-bottom: 0.25rem;
 		border-bottom: 1px solid lightgray;
 	}
 `

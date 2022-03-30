@@ -40,11 +40,13 @@ const ColorConverter = () => {
 	return (
 		<ConverterStyle>
 			<div className='Merienda border-converter box-shadow'>
-				<h2 className='header-converter text-center p-2'>Color Converter</h2>
+				<h2 className='header-converter text-center p-2 mb-0'>
+					Color Converter
+				</h2>
 				<input
 					type='text'
 					placeholder='red'
-					className='input-converter my-2 text-center'
+					className='input-converter mb-2 text-center'
 					onChange={converterValue}
 				/>
 				<div className='d-flex justify-content-around border-bottom pb-1'>

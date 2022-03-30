@@ -12,8 +12,10 @@ const SwatchDiv = ({ bg, onDelete, colorRemover }) => {
 	const [xColor, setXColor] = useState('black')
 	const [showCopy, setShowCopy] = useState(false)
 
+	const BGColor = bg.color
+
 	useEffect(() => {
-		if (chroma(bg.color).luminance() < 0.2) {
+		if (chroma(BGColor).luminance() < 0.2) {
 			setTextColor('text-white')
 			setXColor('white')
 		} else {
@@ -34,10 +36,9 @@ const SwatchDiv = ({ bg, onDelete, colorRemover }) => {
 		<CopyToClipboard text={bg.color} onCopy={() => setCopied({ copied: true })}>
 			<SwatchPickerStyle bg={bg.color}>
 				<div
-					className='swatch-div flex-column align-items-end d-flex flex-column-reverse'
-					onClick={copyDisplay}
-				>
-					<div className='mt-1 px-1 Merienda rotate'>
+					className='swatch-div flex-column align-items-end d-flex flex-column-reverse '
+					onClick={copyDisplay}>
+					<div className='px-2'>
 						<p className={textColor}>{bg.color}</p>
 					</div>
 
@@ -52,7 +53,7 @@ const SwatchDiv = ({ bg, onDelete, colorRemover }) => {
 						</div>
 					)}
 					{showCopy && (
-						<div className='mx-2 copied'>
+						<div className='mx-auto copied'>
 							<p className={textColor}>Copied</p>{' '}
 						</div>
 					)}
