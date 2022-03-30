@@ -18,7 +18,7 @@ function App(props) {
 	const [mySwatches, setMySwatches] = useState([
 		{
 			name: 'swatch force one',
-			id: 10,
+			id: 106670,
 			colors: [
 				{
 					id: 1,
@@ -120,8 +120,10 @@ function App(props) {
 				<header className='App-header'>
 					<div className='row fit'>
 						<div className='col-7 m-3 mb-2'>
-							<h1 className='header-main Merienda'>ColorSwatch.com</h1>
+							<h1 className='header-main Merienda'>Color Picker App</h1>
 							<h2 className='Tangerine'>Color solutions for your website</h2>
+							{/* <div className='square-1' />
+							<div className='square-2' /> */}
 						</div>
 						<div className='col-4 d-flex align-items-end justify-content-end m-3 mb-2'>
 							<nav className='p-3'>

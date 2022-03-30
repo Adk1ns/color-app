@@ -2,7 +2,14 @@ import styled from 'styled-components'
 
 const ConverterStyle = styled.div`
 	.header-converter {
-		color: brown;
+		color: #e71d36;
+		background-image: linear-gradient(
+			to bottom right,
+			black,
+			#212529,
+			#343a40,
+			#495057
+		);
 	}
 	.input-converter {
 		width: 100%;
@@ -10,7 +17,7 @@ const ConverterStyle = styled.div`
 	}
 	.border-converter {
 		border: 1px solid lightgray;
-		border-radius: 1rem;
+		border-radius: 0.25rem;
 		background-color: white;
 	}
 	.border-bottom {

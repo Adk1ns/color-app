@@ -1,14 +1,26 @@
 .App-header {
-	background-color: black;
+	background-image: linear-gradient(
+		to bottom right,
+		black,
+		#212529,
+		#343a40,
+		#495057
+	);
 	min-height: 10vh;
 	color: #faf4ea;
 }
 .header-main {
-	color: brown;
+	color: #e71d36;
 }
 
 .footer {
-	background-color: black;
+	background-image: linear-gradient(
+		to top right,
+		black,
+		#212529,
+		#343a40,
+		#495057
+	);
 	color: #faf4ea;
 	height: 5rem;
 }

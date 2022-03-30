@@ -6,6 +6,7 @@ import { useState } from 'react'
 import SwatchDiv from './SwatchDiv'
 import SwatchPickerStyle from './SwatchPickerStyle'
 import chroma from 'chroma-js'
+import PaletteDiv from './PaletteDiv'
 
 const SwatchPicker = (
 	props,
@@ -178,13 +179,14 @@ const SwatchPicker = (
 						</div>
 						<div className='col-9'>
 							{props.colorsInSwatch && (
-								<div className='swatch-div-container d-flex align-items-center flex-wrap mt-2'>
+								<div className='swatch-div-container d-flex align-items-center flex-wrap mt-2 d-flex align-items-stretch'>
 									{props.colorsInSwatch.map((color, index) => (
-										<SwatchDiv
+										<PaletteDiv
 											bg={color}
 											key={index}
 											onDelete={deleteColor}
 											colorRemover={colorRemover}
+											className='d-flex align-items-stretch'
 										/>
 									))}
 								</div>
