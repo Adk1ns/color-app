@@ -687,6 +687,48 @@
 					"swatch": "two"
 				}
 			]
+		},
+		{
+			"name": "For Fun",
+			"id": 700,
+			"style": ["orange", "blue", "gray"],
+			"colors": [
+				{
+					"id": 1,
+					"color": "#1985a1",
+					"swatch": "two"
+				},
+				{
+					"id": 2,
+					"color": "#4c5c68",
+					"swatch": "two"
+				},
+				{
+					"id": 3,
+					"color": "#46494c",
+					"swatch": "two"
+				},
+				{
+					"id": 4,
+					"color": "#c5c3c6",
+					"swatch": "two"
+				},
+				{
+					"id": 5,
+					"color": "#d7d7d8",
+					"swatch": "two"
+				},
+				{
+					"id": 6,
+					"color": "#f77956",
+					"swatch": "two"
+				},
+				{
+					"id": 7,
+					"color": "#ff6236",
+					"swatch": "two"
+				}
+			]
 		}
 	]
 }
