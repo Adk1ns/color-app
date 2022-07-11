@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import SwatchPicker from './MySwatches/SwatchPicker'
 import MySwatch from './MySwatches/MySwatch'
 import UserContext from '../Context/user-context'
+import ColorConverter from './ColorConverter/ColorConverter'
 
 const MySwatches = ({ mySwatches, setMySwatches }) => {
 	const ctx = useContext(UserContext)
@@ -26,21 +27,29 @@ const MySwatches = ({ mySwatches, setMySwatches }) => {
 					<div className='Merienda mt-2'>
 						{isLoggedIn && (
 							<>
-								{swatchPickerOpen && (
-									<SwatchPicker
-										setMySwatches={setMySwatches}
-										mySwatches={mySwatches}
-										colorsInSwatch={colorsInSwatch}
-										setColorsInSwatch={setColorsInSwatch}
-										name={name}
-										setSwatchName={setSwatchName}
-									/>
-								)}
+							<div className='d-flex justify-content-around mt-3'>
+								<div className='col-9'>
+									{swatchPickerOpen && (
+										<SwatchPicker
+											setMySwatches={setMySwatches}
+											mySwatches={mySwatches}
+											colorsInSwatch={colorsInSwatch}
+											setColorsInSwatch={setColorsInSwatch}
+											name={name}
+											setSwatchName={setSwatchName}
+										/>
+										
+									)}
+								</div>
+								<div className='col-2'>
+									<ColorConverter />
+								</div>
+								</div>
 								<h1 className='text-center pt-5 border-bottom'>
 									My Color Swatch Collection
 								</h1>
 								<div className='d-flex flex-wrap justify-content-center border-bottom'>
-									<div className='d-flex align-items-center flex-wrap'>
+									<div className='d-flex flex-wrap justify-content-center'>
 										{mySwatches.map((swatch, index) => (
 											<MySwatch
 												swatch={swatch}
@@ -61,7 +70,7 @@ const MySwatches = ({ mySwatches, setMySwatches }) => {
 						)}
 						{!isLoggedIn && (
 							<div>
-								<h1>Please log the fuck in</h1>
+								<h1>Please log in</h1>
 							</div>
 						)}
 						{/* <button onClick={logInOut}>LogIn/Out</button>

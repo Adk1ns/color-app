@@ -1,7 +1,7 @@
 import React from 'react'
 
 const UserContext = React.createContext({
-	fuck: true,
+	test: true,
 })
 
 export default UserContext

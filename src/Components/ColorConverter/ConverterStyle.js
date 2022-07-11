@@ -19,6 +19,7 @@ const ConverterStyle = styled.div`
 		border: 1px solid lightgray;
 		border-radius: 0.25rem;
 		background-color: white;
+		height: 24.3rem;
 	}
 	.border-bottom {
 		border-bottom: 1px solid lightgray;

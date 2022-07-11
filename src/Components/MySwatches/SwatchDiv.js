@@ -6,7 +6,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import X from '../../Images/X.png'
 import XWhite from '../../Images/XWhite.png'
 
-const SwatchDiv = ({ bg, onDelete, colorRemover }) => {
+const SwatchDiv = ({ bg }) => {
 	const [textColor, setTextColor] = useState()
 	const [copied, setCopied] = useState()
 	const [xColor, setXColor] = useState('black')
@@ -41,19 +41,8 @@ const SwatchDiv = ({ bg, onDelete, colorRemover }) => {
 					<div className='px-2'>
 						<p className={textColor}>{bg.color}</p>
 					</div>
-
-					{colorRemover && xColor === 'black' && (
-						<div className='mx-auto' onClick={() => onDelete(bg.id)}>
-							<img src={X} className='image-x-resize' />
-						</div>
-					)}
-					{colorRemover && xColor === 'white' && (
-						<div className='mx-auto' onClick={() => onDelete(bg.id)}>
-							<img src={XWhite} className='image-x-resize' />
-						</div>
-					)}
 					{showCopy && (
-						<div className='mx-auto copied'>
+						<div className='mx-auto my-auto copied'>
 							<p className={textColor}>Copied</p>{' '}
 						</div>
 					)}

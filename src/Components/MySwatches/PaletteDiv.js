@@ -29,13 +29,13 @@ const PaletteDiv = ({ bg, onDelete, colorRemover }) => {
 				</div>
 
 				{colorRemover && xColor === 'black' && (
-					<div className='mx-auto' onClick={() => onDelete(bg.id)}>
-						<img src={X} className='image-x-resize' />
+					<div className='d-flex justify-content-center' onClick={() => onDelete(bg.id)}>
+						<img src={X} className='image-x-resize mt-5' />
 					</div>
 				)}
 				{colorRemover && xColor === 'white' && (
-					<div className='mx-auto' onClick={() => onDelete(bg.id)}>
-						<img src={XWhite} className='image-x-resize' />
+					<div className='d-flex justify-content-center' onClick={() => onDelete(bg.id)}>
+						<img src={XWhite} className='image-x-resize mt-5' />
 					</div>
 				)}
 			</div>

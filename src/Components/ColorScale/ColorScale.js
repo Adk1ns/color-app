@@ -1,11 +1,17 @@
 import React from 'react'
 import ConverterStyle from '../ColorConverter/ConverterStyle'
+import chroma from 'chroma-js'
 
 const ColorScale = () => {
+	// problems with chroma.scale()
+	// const newColor = chroma.scale(['yellow', 'red', 'black'])
+	// new idea: add darken / lighten
+	console.log(chroma('hotpink').darken(2.6).hex())
+	console.log(chroma('hotpink').brighten(2).hex())
 	return (
 		<ConverterStyle>
 			<div className='Merienda border-converter box-shadow'>
-				<h2 className='header-converter text-center p-2 mb-0'>Color Scale</h2>
+				<h2 className='header-converter text-center p-2 mb-0'>Light / Dark</h2>
 				<input
 					type='text'
 					placeholder='red'

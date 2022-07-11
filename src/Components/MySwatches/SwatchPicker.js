@@ -1,7 +1,7 @@
 import React from 'react'
 import { HexColorPicker } from 'react-colorful'
-import { RgbaStringColorPicker } from 'react-colorful'
-import { HslaStringColorPicker } from 'react-colorful'
+import { RgbStringColorPicker } from 'react-colorful'
+import { HslStringColorPicker } from 'react-colorful'
 import { useState } from 'react'
 import SwatchDiv from './SwatchDiv'
 import SwatchPickerStyle from './SwatchPickerStyle'
@@ -43,12 +43,12 @@ const SwatchPicker = (
 	}
 
 	const saveButton = () => {
-		//new error in save button, crash on save
 		const id = Math.floor(Math.random() * 1000000) + 1
 		const colors = props.colorsInSwatch
 		const newSwatch = { id: id, colors, name: props.name }
 		props.setMySwatches([...props.mySwatches, newSwatch])
 	}
+
 	const clearButton = () => {
 		props.setColorsInSwatch([])
 		props.setSwatchName('')
@@ -86,19 +86,19 @@ const SwatchPicker = (
 
 	return (
 		<SwatchPickerStyle>
-			<div className='d-flex justify-content-center px-5'>
-				<div className='container-create m-3 p-3 Merienda swatch-picker-border box-shadow col-9'>
+			<div className='d-flex justify-content-center'>
+				<div className='container-create p-3  Merienda swatch-picker-border box-shadow '>
 					<div className='row'>
 						<div className='col-3'>
 							<div className='button-container d-flex justify-content-center '>
 								<button className='BTN-left-Round' onClick={hexFormat}>
-									hex
+									HEX
 								</button>
 								<button className='BTN-Middle' onClick={rgbaFormat}>
-									rgba
+									RGB
 								</button>
 								<button className='BTN-right-Round' onClick={hslaFormat}>
-									hsla
+									HSL
 								</button>
 							</div>
 							{colorFormat === 'hex' && (
@@ -129,7 +129,7 @@ const SwatchPicker = (
 							{colorFormat === 'rgba' && (
 								<>
 									<div className='d-flex justify-content-center my-3'>
-										<RgbaStringColorPicker color={color} onChange={setColor} />
+										<RgbStringColorPicker color={color} onChange={setColor} />
 									</div>
 									<div className='text-center'>
 										{/* <p>{color}</p> */}
@@ -154,7 +154,7 @@ const SwatchPicker = (
 							{colorFormat === 'hsla' && (
 								<>
 									<div className='d-flex justify-content-center my-3'>
-										<HslaStringColorPicker color={color} onChange={setColor} />
+										<HslStringColorPicker color={color} onChange={setColor} />
 									</div>
 									<div className='text-center'>
 										{/* <p>{color}</p> */}
@@ -229,9 +229,6 @@ const SwatchPicker = (
 						</div>
 					</div>
 				</div>
-				{/* <div className='col-3 swatch-picker-border box-shadow m-3'>
-					<h1>Ads here</h1>
-				</div> */}
 			</div>
 		</SwatchPickerStyle>
 	)

@@ -32,7 +32,7 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 				)}
 			</div>
 			<div className='d-flex flex-row'>
-				<div className='col-10 mt-4'>
+				<div className='col-12 mt-4'>
 					<div className='d-flex justify-content-center'>
 						<div className='d-flex justify-content-center flex-wrap'>
 							{popSwatches.map((swatch, index) => (
@@ -46,13 +46,12 @@ const MainPage = ({ mySwatches, setMySwatches }) => {
 						</div>
 					</div>
 				</div>
-				<div className='col-2 mt-5'>
+				{/* <div className='col-2 mt-5'>
 					<ColorConverter />
 					<div className='mt-4'>
 						<ColorScale />
 					</div>
-					{/* <img className='colorDrip-size mt-4' src={colorDrip}></img> */}
-				</div>
+				</div> */}
 			</div>
 		</div>
 	)

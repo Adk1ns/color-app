@@ -3,10 +3,8 @@ import SwatchDiv from './SwatchDiv'
 import SwatchPickerStyle from './SwatchPickerStyle'
 
 const Swatch = ({ setMySwatches, swatch, mySwatches }) => {
+	
 	const saveButton = () => {
-		console.log(mySwatches)
-		console.log(swatch)
-		console.log(setMySwatches)
 		setMySwatches([...mySwatches, swatch])
 	}
 

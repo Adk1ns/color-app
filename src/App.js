@@ -17,63 +17,73 @@ import AppHeaderStyle from './AppHeaderStyle'
 function App(props) {
 	const [mySwatches, setMySwatches] = useState([
 		{
-			name: 'swatch force one',
+			name: 'Swatch Force One',
 			id: 106670,
 			colors: [
 				{
 					id: 1,
-					color: '#19b582',
+					color: '#f77956',
 					swatch: 'one',
 				},
 				{
 					id: 2,
-					color: '#1783bd',
+					color: '#d7d7d8',
 					swatch: 'one',
 				},
 				{
 					id: 3,
-					color: '#fbde06',
+					color: '#c5c3c6',
 					swatch: 'one',
 				},
 				{
 					id: 4,
-					color: '#8b9898',
+					color: '#46494c',
 					swatch: 'one',
 				},
 				{
 					id: 5,
-					color: '#355670',
+					color: '#4c5c68',
+					swatch: 'one',
+				},
+				{
+					id: 6,
+					color: '#1985a1',
 					swatch: 'one',
 				},
 			],
 		},
 		{
-			name: 'swatch force two',
+			name: 'Togetherly',
 			id: 299,
 			colors: [
 				{
 					id: 1,
-					color: '#ef476f',
+					color: '#355670',
 					swatch: 'two',
 				},
 				{
 					id: 2,
-					color: '#ffd166',
+					color: '#19b582',
 					swatch: 'two',
 				},
 				{
 					id: 3,
-					color: '#06d6a0',
+					color: '#f0f8ff',
 					swatch: 'two',
 				},
 				{
 					id: 4,
-					color: '#118ab2',
+					color: '#dce0e0',
 					swatch: 'two',
 				},
 				{
 					id: 5,
-					color: '#073b4c',
+					color: '#8b9898',
+					swatch: 'two',
+				},
+				{
+					id: 6,
+					color: '#fbde06',
 					swatch: 'two',
 				},
 			],
@@ -128,13 +138,13 @@ function App(props) {
 						<div className='col-4 d-flex align-items-end justify-content-end m-3 mb-2'>
 							<nav className='p-3'>
 								<Link to='/' className='p-2 Merienda Nav-Text'>
-									Home
+									Popular
 								</Link>
 								<Link to='/MySwatches' className='p-2 Merienda Nav-Text'>
 									Myswatches
 								</Link>
 								<Link to='/CSS' className='p-2 Merienda Nav-Text'>
-									Merch
+									Notes
 								</Link>
 								<Link to='/MySwatches' className='p-2 Merienda Nav-Text'>
 									Log In/Out
@@ -168,7 +178,7 @@ function App(props) {
 					</Routes>
 				</main>
 				<footer className='footer text-center'>
-					<p className='Merienda pt-3 mb-0'>ColorSwatch.com</p>
+					<p className='Merienda pt-3 mb-0'>saasSwatch.com</p>
 					<p>2022</p>
 				</footer>
 			</AppHeaderStyle>
